@@ -17,13 +17,14 @@ A simple command-line Contact Manager written in C, supporting creation, editing
 
 ## 🗂️ Project Structure
 
-contact-manager/                                                                                                                                                                                              
-├── src/                                                                                                                                                                                                      
-│ ├── main.c # Main program file (UI logic)
-│ └── contact.h # Contact structure and function declarations/definitions
+contact-manager/
+├── src/
+│   ├── main.c
+│   └── contacts.h
 ├── data/
-│ └── contacts.txt # Example output file for saved contacts
-├── README.md # This file
+│   └── contacts.txt         # Exemple de fichier sauvegardé
+└── README.md
+
 
 
 ---
