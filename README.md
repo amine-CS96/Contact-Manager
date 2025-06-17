@@ -1,37 +1,59 @@
-# 📒 Contact Manager in C
 
-A simple command-line Contact Manager written in C, supporting creation, editing, deletion, saving, and loading of contact entries. The program uses dynamic memory allocation and doubly-linked lists for efficient contact management, along with file handling to persist data.
+# contact-manager — Command-Line Contact Manager in C
 
----
+## Description
 
-## 📌 Features
-
-- ✅ Add a new contact (Name, First name, Phone number, Email)
-- ✅ Delete a contact by name and first name
-- ✅ Modify contact details
-- ✅ Display all contacts
-- ✅ Save contacts to a text file
-- ✅ Load and display contacts from a file
+This C program implements a simple command-line Contact Manager allowing users to add, delete, modify, display, save, and load contact entries. Contacts are stored dynamically using a doubly-linked list. The program practices dynamic memory management, file handling, and linked list operations.
 
 ---
 
-## 🗂️ Project Structure
+## Features
 
-contact-manager/
-├── src/
-│   ├── main.c
-│   └── contacts.h
-├── data/
-│   └── contacts.txt         # Exemple de fichier sauvegardé
-└── README.md
-
-
+* Add new contacts (Name, First Name, Phone Number, Email)
+* Delete contacts by name and first name
+* Modify contact details
+* Display all contacts
+* Save contacts to a text file
+* Load contacts from a file and display them
 
 ---
 
-## 🧠 Data Structure
+## Project Structure
 
-The program uses a doubly-linked list to store the contacts dynamically:
+* `src/main.c` — contains the main menu and program logic
+* `src/contacts.h` — defines data structures and functions for managing contacts
+* `data/contacts.txt` — example file for saved contacts
+
+---
+
+## Compilation & Execution
+
+```bash
+gcc src/main.c -o contact-manager
+./contact-manager
+```
+
+---
+
+## Usage
+
+1. Run the program.
+2. Choose an option from the menu:
+
+   * **1**: Add a new contact
+   * **2**: Delete a contact
+   * **3**: Modify a contact
+   * **4**: Display all contacts
+   * **5**: Save contacts to file
+   * **6**: Load contacts from file
+   * **7**: Exit
+3. Follow prompts to enter or confirm contact information or file names.
+
+---
+
+## Data Structure
+
+Contacts are stored as nodes in a doubly-linked list:
 
 ```c
 typedef struct data {
@@ -46,43 +68,28 @@ typedef struct liste {
     struct liste *next;
     struct liste *prev;
 } liste;
+```
 
 ---
 
-## 🛠️ Compilation & Execution
+## Example of Saved Contact Format
 
+```
+------------------------------- Contact Information -----------------------------
 
-▶️ Compile with GCC (manual)
+Name : Doe
+First Name : John
+Phone Number : 0612345678
+Email Address : john.doe@gmail.com
 
-    # gcc src/main.c -o contact-manager
-    # ./contact-manager
+--------------------------------------------------------------------------------
+```
 
 ---
 
-## 📋 Example Menu
+## Author
 
---------------------------------------MENU:-------------------------------------------
+*Amine El Harrab*
 
-   1. Ajouter un nouveau contact
-   2. Suppression d'un contact
-   3. Modification d'un contact
-   4. Affichage de tous les contacts
-   5. Sauvegarde des contacts dans un fichier
-   6. Chargement des contacts depuis un fichier
-   7. Terminer
+---
 
----------------------------------------------------------------------------------------
-
-
-## 💾 Example Output (saved file)
--------------------------------les informations de contact  1  :-----------------------------
-Nom : Doe
-Prenom : John
-Numero de telephone  :0612345678
-Adresse gmail  : john.doe@gmail.com
----------------------------------------------------------------------------------------------
-
---
-
-## - 📜 License
-This project is for educational purposes. You are free to use, modify, and share it.    
