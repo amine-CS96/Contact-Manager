@@ -1,5 +1,5 @@
 
-# contact-manager — Command-Line Contact Manager in C
+# Contact Manager — Console-Based Address Book in C
 
 ## Description
 
