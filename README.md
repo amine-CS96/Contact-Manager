@@ -17,8 +17,8 @@ A simple command-line Contact Manager written in C, supporting creation, editing
 
 ## 🗂️ Project Structure
 
-contact-manager/
-├── src/
+contact-manager/                                                                                                                                                                                              
+├── src/                                                                                                                                                                                                      
 │ ├── main.c # Main program file (UI logic)
 │ └── contact.h # Contact structure and function declarations/definitions
 ├── data/
