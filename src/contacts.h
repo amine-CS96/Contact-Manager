@@ -63,7 +63,7 @@ if (ls==NULL){
     return ;
 }
     else{
-    printf("\n (^-^)----------------------- Voici la liste des  contacts :--------------------\n");
+    printf("\n (^-^)----------------------- Voici la liste des  contacts :---------------------\n");
      while(tmp!=NULL){
      cmp++ ;
      printf("\n --> les informations de contact %d : \n",cmp);
