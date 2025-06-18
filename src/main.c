@@ -15,14 +15,14 @@ liste *debut =NULL ;
 
 while(num!=7){
         printf("--------------------------------------MENU:-------------------------------------------\n\n");
-printf("\t\t   1. Ajouter un nouveau contact .\n");
-printf("\t\t   2. Suppression d'un contact .\n");
-printf("\t\t   3. Modification d'un contact \n");
-printf("\t\t   4. Affichage de tous les contacts.\n");
-printf("\t\t   5. Sauvegarde des contact dans un fichier .\n");
-printf("\t\t   6. Chargement des contacts depuis un fichier .\n");
-printf("\t\t   7. Terminer . \n");
-printf("---------------------------------------------------------------------------------------------\n\n");
+        printf("\t\t   1. Ajouter un nouveau contact .\n");
+        printf("\t\t   2. Suppression d'un contact .\n");
+        printf("\t\t   3. Modification d'un contact \n");
+        printf("\t\t   4. Affichage de tous les contacts.\n");
+        printf("\t\t   5. Sauvegarde des contact dans un fichier .\n");
+        printf("\t\t   6. Chargement des contacts depuis un fichier .\n");
+        printf("\t\t   7. Terminer . \n");
+        printf("---------------------------------------------------------------------------------------\n\n");
 
  printf("-->Veuillez saisir un numero a partir de MENU (1,2...,7) :");
  scanf("%d",&num);
